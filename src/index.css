@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Tajawal:wght@400;500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html[dir="rtl"] body {
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  @apply bg-light text-dark antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Hidden above the viewport until focused. Uses a vertical offset (not left: -9999px),
+   which would make the page scroll sideways in RTL/Arabic. */
+.skip-link {
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  z-index: 200;
+  background: #153440;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 0 0 8px 0;
+  transform: translateY(-120%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
