@@ -10,10 +10,10 @@ const translations = {
       cta: "Let's Talk",
     },
     hero: {
-      eyebrow: "Front-End Developer · UI/UX Designer",
+      eyebrow: "Front-End Developer · Data Analyst",
       name: "Fadwa Barnawi",
       intro:
-        "I turn ideas into clean, intuitive, and engaging digital experiences through front-end development and UI/UX design.",
+        "I turn data and ideas into clean, intuitive, and engaging digital experiences through front-end development and data analysis.",
       cta1: "Explore My Work",
       cta2: "Download CV",
       scroll: "Scroll",
@@ -172,10 +172,10 @@ const translations = {
       cta: "لنتحدث",
     },
     hero: {
-      eyebrow: "مطوّرة واجهات أمامية · مصممة تجربة وواجهة مستخدم",
+      eyebrow: "مطوّرة واجهات أمامية · محللة بيانات",
       name: "فدوى برناوي",
       intro:
-        "أحوّل الأفكار إلى تجارب رقمية نظيفة وبديهية وجذابة من خلال تطوير الواجهات الأمامية وتصميم تجربة وواجهة المستخدم.",
+        "أحوّل البيانات والأفكار إلى تجارب رقمية نظيفة وبديهية وجذابة من خلال تطوير الواجهات الأمامية وتحليل البيانات.",
       cta1: "استكشاف أعمالي",
       cta2: "تحميل السيرة الذاتية",
       scroll: "مرّر للأسفل",

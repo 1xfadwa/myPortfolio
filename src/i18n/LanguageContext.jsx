@@ -20,8 +20,8 @@ export function LanguageProvider({ children }) {
     document.documentElement.setAttribute("dir", dir);
     document.title =
       lang === "ar"
-        ? "فدوى برناوي — مطوّرة واجهات أمامية ومصممة تجربة وواجهة مستخدم"
-        : "Fadwa Barnawi — Front-End Developer & UI/UX Designer";
+        ? "فدوى برناوي — مطوّرة واجهات أمامية ومحللة بيانات"
+        : "Fadwa Barnawi — Front-End Developer & Data Analyst";
   }, [lang, dir]);
 
   function setLang(next) {
