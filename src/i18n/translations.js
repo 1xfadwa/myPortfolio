@@ -13,7 +13,7 @@ const translations = {
       eyebrow: "Front-End Developer · Data Analyst",
       name: "Fadwa Barnawi",
       intro:
-        "I turn data and ideas into clean, intuitive, and engaging digital experiences through front-end development and data analysis.",
+        "I turn data into clear insights through data analysis. I turn ideas into clean, intuitive, and engaging digital experiences through front-end development.",
       cta1: "Explore My Work",
       cta2: "Download CV",
       scroll: "Scroll",
@@ -175,7 +175,7 @@ const translations = {
       eyebrow: "مطوّرة واجهات أمامية · محللة بيانات",
       name: "فدوى برناوي",
       intro:
-        "أحوّل البيانات والأفكار إلى تجارب رقمية نظيفة وبديهية وجذابة من خلال تطوير الواجهات الأمامية وتحليل البيانات.",
+        "أحوّل البيانات إلى رؤى واضحة من خلال تحليل البيانات. وأحوّل الأفكار إلى تجارب رقمية نظيفة وبديهية وجذابة من خلال تطوير الواجهات الأمامية.",
       cta1: "استكشاف أعمالي",
       cta2: "تحميل السيرة الذاتية",
       scroll: "مرّر للأسفل",
