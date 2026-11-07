@@ -91,6 +91,19 @@ const translations = {
           // "https://github.com/1xfadwa/<repo-name>". Until then the button opens the GitHub profile.
         },
         {
+          name: "Car Rental Contracts Dashboard",
+          desc: "An interactive Arabic (RTL) Power BI dashboard that analyzes car rental contracts across 7 branches in Saudi Arabia, covering revenue, rental duration, car types and booking status.",
+          highlights: [
+            "KPI cards for contracts, revenue, branches and the longest rental",
+            "SUVs bring the highest rental value, and value rises with the number of rental days",
+            "Booking status at a glance: 66.67% completed, 20% in progress, 13.33% canceled",
+          ],
+          tech: ["Power BI", "DAX", "Data Analytics", "Arabic RTL"],
+          image: "/assets/car-rental-dashboard.webp",
+          imageAlt: "Car rental contracts dashboard in Power BI with KPI cards, charts by car type and branch, and filters",
+          url: "https://github.com/1xfadwa/car-rental-dashboard",
+        },
+        {
           name: "Habitly – Habit Tracker App",
           desc: "A mobile application designed to help users build positive daily habits and track their progress in a simple and organized way. It provides an intuitive interface for managing habits and monitoring daily and weekly achievements.",
           highlights: [
@@ -250,6 +263,19 @@ const translations = {
           image: "/assets/social-media-impact.png",
           imageAlt: "الصفحة الرئيسية للوحة أثر وسائل التواصل الاجتماعي على الطلاب في Power BI",
           // TODO: ضعي رابط المستودع هنا بعد رفعه على GitHub (نفس الرابط الموجود في النسخة الإنجليزية).
+        },
+        {
+          name: "لوحة معلومات عقود تأجير السيارات",
+          desc: "لوحة تفاعلية في Power BI بدعم اللغة العربية (RTL) لتحليل عقود تأجير السيارات في 7 فروع داخل المملكة، وتغطي الإيرادات ومدة الإيجار وأنواع السيارات وحالة الحجز.",
+          highlights: [
+            "بطاقات مؤشرات لعدد العقود والإيرادات والفروع وأعلى مدة إيجار",
+            "سيارات SUV الأعلى قيمة إيجار، وتزيد القيمة مع زيادة عدد أيام الإيجار",
+            "حالة الحجز بنظرة سريعة: 66.67% مكتمل، 20% قيد التنفيذ، 13.33% ملغي",
+          ],
+          tech: ["Power BI", "DAX", "تحليل البيانات", "واجهة عربية RTL"],
+          image: "/assets/car-rental-dashboard.webp",
+          imageAlt: "لوحة عقود تأجير السيارات في Power BI تعرض بطاقات المؤشرات ورسومًا حسب نوع السيارة والفرع وفلاتر تفاعلية",
+          url: "https://github.com/1xfadwa/car-rental-dashboard",
         },
         {
           name: "Habitly – تطبيق تتبع العادات",
