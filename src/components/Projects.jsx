@@ -20,12 +20,18 @@ function ProjectCard({ project, index }) {
   return (
     <Reveal
       as="article"
-      className={`group bg-white rounded-[14px] border border-transparent overflow-hidden flex flex-col h-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_26px_50px_rgba(21,52,64,0.12)] hover:border-accent/40 ${
+      className={`group relative hover:z-20 bg-white rounded-[14px] border border-transparent flex flex-col h-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_26px_50px_rgba(21,52,64,0.12)] hover:border-accent/40 ${
         featured ? "sm:col-span-2 lg:col-span-3 lg:grid lg:grid-cols-[1.1fr_1fr]" : ""
       }`}
     >
       {hasImage && (
-        <div className="relative aspect-[16/10] lg:aspect-auto lg:min-h-[340px] bg-light border-b border-light lg:border-b-0 lg:border-e">
+        <div
+          className={`relative aspect-[16/10] overflow-hidden bg-light rounded-t-[14px] border-b border-light origin-center transition-[transform,box-shadow,border-radius] duration-500 ease-out hover:z-10 hover:scale-[1.06] hover:rounded-xl hover:shadow-[0_24px_48px_rgba(21,52,64,0.3)] motion-reduce:transition-none motion-reduce:hover:scale-100 ${
+            featured
+              ? "lg:aspect-auto lg:min-h-[340px] lg:rounded-none lg:rounded-s-[14px] lg:border-b-0 lg:border-e"
+              : ""
+          }`}
+        >
           <img
             src={project.image}
             alt={project.imageAlt}
