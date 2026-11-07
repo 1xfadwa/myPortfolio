@@ -90,6 +90,20 @@ const translations = {
           // TODO: replace with the repository link once it is on GitHub, e.g.
           // "https://github.com/1xfadwa/<repo-name>". Until then the button opens the GitHub profile.
         },
+        {
+          name: "Habitly – Habit Tracker App",
+          desc: "A mobile application designed to help users build positive daily habits and track their progress in a simple and organized way. It provides an intuitive interface for managing habits and monitoring daily and weekly achievements.",
+          highlights: [
+            "Clean and modern user interface with weekly progress tracking",
+            "Ability to add, organize, and track daily habits",
+            "Light and dark mode support",
+            "Currently under development, with ongoing improvements to statistics and data persistence",
+          ],
+          tech: ["Flutter", "Dart", "Provider", "SharedPreferences", "Mobile App"],
+          image: "/assets/habitly-preview.webp",
+          imageAlt: "Habitly habit tracker app interface preview",
+          url: "https://github.com/1xfadwa/habitly",
+        },
         // Hidden for now. To bring these placeholder projects back, delete the
         // opening "/*" and the closing "*/" around them (and do the same in the Arabic list).
         /*
@@ -222,6 +236,20 @@ const translations = {
           image: "/assets/social-media-impact.png",
           imageAlt: "الصفحة الرئيسية للوحة أثر وسائل التواصل الاجتماعي على الطلاب في Power BI",
           // TODO: ضعي رابط المستودع هنا بعد رفعه على GitHub (نفس الرابط الموجود في النسخة الإنجليزية).
+        },
+        {
+          name: "Habitly – تطبيق تتبع العادات",
+          desc: "تطبيق موبايل يساعد المستخدمين على بناء عادات يومية إيجابية ومتابعة تقدمهم بطريقة بسيطة ومنظمة. يوفر واجهة سهلة لإدارة العادات وتتبع الإنجازات اليومية والأسبوعية.",
+          highlights: [
+            "واجهة مستخدم بسيطة وعصرية لعرض العادات والتقدم الأسبوعي",
+            "إمكانية إضافة العادات وتنظيمها ومتابعة إنجازها",
+            "دعم الوضع الليلي والنهاري",
+            "المشروع قيد التطوير، ويجري العمل على تحسين الإحصائيات وحفظ البيانات",
+          ],
+          tech: ["Flutter", "Dart", "Provider", "SharedPreferences", "تطبيق جوال"],
+          image: "/assets/habitly-preview.webp",
+          imageAlt: "معاينة واجهة تطبيق Habitly لتتبع العادات",
+          url: "https://github.com/1xfadwa/habitly",
         },
         // مخفية حاليًا. لإرجاع هذه المشاريع احذفي علامتي "/*" و"*/" حولها (وكذلك في القائمة الإنجليزية).
         /*
