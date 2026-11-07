@@ -14,6 +14,8 @@ function ProjectCard({ project, index }) {
   // A project marked `featured` spans the full row, but only when its image exists.
   const featured = Boolean(project.featured) && hasImage;
   const url = project.url || GITHUB_URL;
+  // `noLink: true` hides the GitHub button (for projects without a public repository).
+  const showLink = !project.noLink;
 
   return (
     <Reveal
@@ -58,7 +60,7 @@ function ProjectCard({ project, index }) {
           </ul>
         )}
 
-        <div className="flex flex-wrap gap-2 mb-6 mt-auto">
+        <div className={`flex flex-wrap gap-2 mt-auto ${showLink ? "mb-6" : ""}`}>
           {project.tech.map((tech) => (
             <span
               key={tech}
@@ -70,29 +72,31 @@ function ProjectCard({ project, index }) {
           ))}
         </div>
 
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`${t.projects.viewGithub}: ${project.name} ${t.projects.opensNewTab}`}
-          className="self-start inline-flex items-center gap-2 text-[13.5px] font-semibold text-dark pt-4 border-t border-light rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dark"
-        >
-          <span>{t.projects.viewGithub}</span>
-          <svg
-            viewBox="0 0 16 16"
-            fill="none"
-            aria-hidden="true"
-            className="w-[15px] h-[15px] rtl:-scale-x-100 transition-transform duration-300 group-hover:translate-x-[3px] group-hover:-translate-y-[3px] rtl:group-hover:-translate-x-[3px]"
+        {showLink && (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${t.projects.viewGithub}: ${project.name} ${t.projects.opensNewTab}`}
+            className="self-start inline-flex items-center gap-2 text-[13.5px] font-semibold text-dark pt-4 border-t border-light rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dark"
           >
-            <path
-              d="M4 12L12 4M12 4H5M12 4V11"
-              stroke="currentColor"
-              strokeWidth="1.4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </a>
+            <span>{t.projects.viewGithub}</span>
+            <svg
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+              className="w-[15px] h-[15px] rtl:-scale-x-100 transition-transform duration-300 group-hover:translate-x-[3px] group-hover:-translate-y-[3px] rtl:group-hover:-translate-x-[3px]"
+            >
+              <path
+                d="M4 12L12 4M12 4H5M12 4V11"
+                stroke="currentColor"
+                strokeWidth="1.4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
+        )}
       </div>
     </Reveal>
   );

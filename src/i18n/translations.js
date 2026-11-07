@@ -104,6 +104,20 @@ const translations = {
           imageAlt: "Habitly habit tracker app interface preview",
           url: "https://github.com/1xfadwa/habitly",
         },
+        {
+          name: "Munir – Qur'an Recitation Correction App",
+          desc: "A graduation project that designs an AI-supported mobile tutor to help learners improve their Qur'an recitation and Tajweed. It is built around two practice modes, Talqeen (guided repetition) and Correction, and is designed to detect pronunciation errors and give instant feedback.",
+          highlights: [
+            "Talqeen mode: listen to a reference reciter, record, and repeat until the recitation is correct",
+            "Correction mode: record a verse and get feedback with the mistakes highlighted",
+            "My role: training and improving the speech model (wav2vec 2.0 for mispronunciation detection) and designing the app logo",
+            "Graduation Project (1) by a team of five; building the mobile app is the next phase",
+          ],
+          tech: ["Machine Learning", "Wav2Vec 2.0", "Speech Recognition", "Logo Design", "Mobile App"],
+          image: "/assets/munir-preview.webp",
+          imageAlt: "Six screens of the Munir app: welcome page, surah list, mode selection, verse range selection and the feedback screens of Talqeen and Correction modes",
+          noLink: true, // no repository yet; remove this line and add `url` once there is one
+        },
         // Hidden for now. To bring these placeholder projects back, delete the
         // opening "/*" and the closing "*/" around them (and do the same in the Arabic list).
         /*
@@ -250,6 +264,20 @@ const translations = {
           image: "/assets/habitly-preview.webp",
           imageAlt: "معاينة واجهة تطبيق Habitly لتتبع العادات",
           url: "https://github.com/1xfadwa/habitly",
+        },
+        {
+          name: "منير – تطبيق تصحيح تلاوة القرآن",
+          desc: "مشروع تخرج يصمم معلّمًا ذكيًا على الجوال يساعد المتعلمين على تحسين تلاوتهم لكتاب الله وأحكام التجويد. يقوم على وضعين للتدريب هما التلقين (التكرار الموجّه) والتصحيح، ويهدف إلى اكتشاف أخطاء النطق وتقديم ملاحظات فورية.",
+          highlights: [
+            "وضع التلقين: الاستماع إلى قارئ مرجعي ثم التسجيل والتكرار حتى تصح التلاوة",
+            "وضع التصحيح: تسجيل آية والحصول على ملاحظات مع تظليل الأخطاء",
+            "دوري: تدريب نموذج التعرف على الصوت وتحسينه (wav2vec 2.0 لاكتشاف أخطاء النطق) وتصميم شعار التطبيق",
+            "مشروع التخرج (1) بفريق من خمس طالبات، وتطوير تطبيق الجوال هو المرحلة التالية",
+          ],
+          tech: ["تعلم الآلة", "Wav2Vec 2.0", "التعرف على الصوت", "تصميم الشعار", "تطبيق جوال"],
+          image: "/assets/munir-preview.webp",
+          imageAlt: "ست شاشات من تطبيق منير: الترحيب وقائمة السور واختيار الوضع وتحديد نطاق الآيات وشاشتا الملاحظات في التلقين والتصحيح",
+          noLink: true, // no repository yet
         },
         // مخفية حاليًا. لإرجاع هذه المشاريع احذفي علامتي "/*" و"*/" حولها (وكذلك في القائمة الإنجليزية).
         /*
