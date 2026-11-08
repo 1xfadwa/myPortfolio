@@ -7,7 +7,7 @@ export default function Skills() {
 
   const groups = [
     { title: t.skills.groups.data, items: ["Excel", "Power BI", "SQL"] },
-    { title: t.skills.groups.frontend, items: ["HTML", "CSS", "JavaScript", "React"] },
+    { title: t.skills.groups.frontend, items: ["HTML", "CSS", "JavaScript", "React", "Flutter"] },
     { title: t.skills.groups.backend, items: ["C#"] },
     { title: t.skills.groups.uiux, items: ["Figma"] },
     { title: t.skills.groups.other, items: [t.skills.touchTyping] },
